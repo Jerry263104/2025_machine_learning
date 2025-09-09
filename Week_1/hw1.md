@@ -131,5 +131,20 @@ $$
 \boxed{\;\tanh(x)=\frac{2\sigma(x)-1}{\sigma^2(x)+\bigl(\sigma(x)-1\bigr)^2}\;}
 $$
 
+**Hyperbolic functions in terms of the logistic sigmoid**
+
+Let \(s=\sigma(x)=\dfrac{1}{1+e^{-x}}\). Then
+\[
+\sinh(x)=\frac{2s-1}{2s(1-s)},\qquad
+\cosh(x)=\frac{2s^2-2s+1}{2s(1-s)},\qquad
+\tanh(x)=\frac{2s-1}{2s^2-2s+1},
+\]
+\[
+\operatorname{sech}(x)=\frac{2s(1-s)}{2s^2-2s+1},\qquad
+\operatorname{csch}(x)=\frac{2s(1-s)}{2s-1},\qquad
+\operatorname{coth}(x)=\frac{2s^2-2s+1}{2s-1}.
+\]
+
+
 
 3.在課堂上有提到過 optimizer 的策略的問題，教授你有提到有論文發表了新的optimizer，它的想法是先走一大步，再走一小步，然後再走一大步，接著一小步，如此的循環反覆更新參數，最後就會到最佳解，那這個還蠻有趣的，因為目前optimizer 大家比較常用的是Adam，想知道說當把optimizer的更新過程給視覺化後，跟Adam的差別是如何?
